@@ -39,6 +39,6 @@ server.use((req, res, next) => {
 
 // Use default router
 server.use(router);
-server.listen(3000, () => {
-  console.log("JSON Server is running");
+server.listen(8085, () => {
+  console.log("JSON Server is running in 8085");
 });
