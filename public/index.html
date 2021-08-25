@@ -33,6 +33,26 @@
         <div class="col-md-12 mt-2">
           <h1>API Tests</h1>
           <hr />
+          <h2 id="routes">Routes</h2>
+          <p><strong>Authentication</strong>: </p>
+          <ul>
+          <li>[POST] /auth/token</li>
+          </ul>
+          <p><strong>Posts</strong>:</p>
+          <ul>
+          <li>[GET] /posts (list posts)</li>
+          <li>[GET] /posts?_page=7&amp;_limit=20 (paginate)</li>
+          <li>[GET] /posts/:id (get by id)</li>
+          <li>[POST] /posts</li>
+          <li>[DELETE] /posts/:id</li>
+          </ul>
+          <p><strong>Comments</strong>:</p>
+          <ul>
+          <li>[GET] /comments</li>
+          <li>[GET] /comments/:id</li>
+          <li>[POST] /comments</li>
+          <li>[DELETE] /comments/:id</li>
+          </ul>
         </div>
       </div>
     </div>
