@@ -27,7 +27,7 @@ server.post("/auth/token", (req, res) => {
 // You can use the one used by JSON Server
 server.use((req, res, next) => {
   const { authorization } = req.headers;
-  if (authorization !== `Bearer ${TOKEN_KEY}`) {
+  if (authorization !== `Bearer ${TOKEN_KEY}` && req.path !== "/") {
     res.status(500).jsonp({
       error: "Token inválido!",
     });
