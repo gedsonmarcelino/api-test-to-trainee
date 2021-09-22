@@ -1,9 +1,15 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode", "created_at": "2021-01-01 08:00:00" }
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "createdAt": "2021-01-01 08:00:00",
+      "comments": [
+        { "id": 1, "body": "some comment", "createdAt": "2021-01-01 08:00:00" }
+      ]
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1, "created_at": "2021-01-01 08:00:00" }
-  ],
+
   "users": { "login": "test", "password": "123456" }
 }
