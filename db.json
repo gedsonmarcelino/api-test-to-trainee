@@ -11,5 +11,8 @@
     }
   ],
 
-  "users": { "login": "test", "password": "123456" }
+  "users": [
+    { "id": 1, "username": "test", "password": "123456" },
+    { "id": 2, "username": "admin", "password": "654321" }
+  ]
 }
