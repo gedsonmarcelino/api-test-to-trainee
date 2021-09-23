@@ -19,6 +19,8 @@ app.use(jsonServer.bodyParser);
 app.use("/auth", authRouter);
 app.use(authMiddleware, jsonRouter);
 
-app.listen(process.env.PORT, () => {
-  console.log(`JSON Server is running in http://localhost:${process.env.PORT}`);
-});
+app.listen(process.env.PORT, () =>
+  console.log(
+    `✅  JSON Server is running in http://localhost:${process.env.PORT}`
+  )
+);
