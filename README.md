@@ -3,6 +3,7 @@
 ## Routes
 
 - [Authentication](#authentication)
+- [User](#user)
 - [Posts](#posts)
 
 ### <a name="authentication"></a>Authentication
@@ -21,6 +22,25 @@
 # --- Response ---
 {
   "token" : "string"
+}
+```
+
+### <a name="user"></a>User
+
+**Header:** Authorization: Bearer {token}
+
+| Method  | Path      | Return        | Description   |
+| ------- | --------- | ------------- | ------------- |
+| **GET** | /user/:id | Object\<User> | Get data user |
+
+```json
+# --- Response <User> ---
+{
+  "id": "number",
+  "name": "string",
+  "username": "string",
+  "avatar": "string",
+  "createdAt": "string"
 }
 ```
 
