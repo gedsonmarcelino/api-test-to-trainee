@@ -5,8 +5,6 @@
 - Node
 - Yarn (recommended) ou NPM
 
----
-
 ## Running application
 
 ```bash
@@ -17,8 +15,6 @@ $ yarn # or npm install
 # Running appication
 $ yarn start
 ```
-
----
 
 ## Routes
 
