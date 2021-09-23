@@ -1,6 +1,6 @@
 # API Rest to trainee
 
-## Requiriments
+## Requirements
 
 - Node
 - Yarn (recommended) ou NPM
