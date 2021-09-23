@@ -45,9 +45,9 @@ $ yarn start # or npm run start
 
 **Header:** Authorization: Bearer {token}
 
-| Method  | Path      | Return        | Description   |
-| ------- | --------- | ------------- | ------------- |
-| **GET** | /user/:id | Object\<User> | Get data user |
+| Method  | Path  | Return        | Description   |
+| ------- | ----- | ------------- | ------------- |
+| **GET** | /user | Object\<User> | Get data user |
 
 ```json
 # --- Response <User> ---
