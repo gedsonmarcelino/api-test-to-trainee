@@ -26,6 +26,8 @@
 
 ### <a name="posts"></a>Posts
 
+> For more details, check the [json-server documentation](https://github.com/typicode/json-server).
+
 **Header:** Authorization: Bearer {token}
 
 | Method     | Path       | Return        | Description            |
