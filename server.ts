@@ -4,6 +4,7 @@ import * as jsonServer from 'json-server';
 import db from './db.json';
 import { authMiddleware } from './middlewares/auth';
 import authRouter from './routes/auth';
+import userRouter from './routes/user';
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use(jsonServer.bodyParser);
 
 // Routes
 app.use("/auth", authRouter);
+app.use("/user", authMiddleware, userRouter);
 app.use(authMiddleware, jsonRouter);
 
 app.listen(process.env.PORT, () =>
