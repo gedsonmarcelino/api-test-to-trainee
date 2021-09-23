@@ -1,5 +1,25 @@
 # API Test to trainee
 
+## Requiriments
+
+- Node
+- Yarn (recommended) ou NPM
+
+---
+
+## Running application
+
+```bash
+
+# Installing libraries
+$ yarn # or npm install
+
+# Running appication
+$ yarn start
+```
+
+---
+
 ## Routes
 
 - [Authentication](#authentication)
