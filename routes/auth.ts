@@ -4,7 +4,6 @@ import db from '../db.json';
 
 const routes = Router();
 
-// Add custom routes before JSON Server router
 routes.post("/token", (req: Request, res: Response) => {
   const { username, password } = req.body;
   const { users } = db;

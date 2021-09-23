@@ -3,7 +3,6 @@ import db from '../db.json';
 
 const routes = Router();
 
-// Add custom routes before JSON Server router
 routes.get("/:id", (req: Request, res: Response) => {
   const { id } = req.params;
   const { users } = db;

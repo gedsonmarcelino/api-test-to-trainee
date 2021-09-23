@@ -8,8 +8,6 @@ import jwt from 'jwt-simple';
 
 const router = Router();
 
-// To handle POST, PUT and PATCH you need to use a body-parser
-// You can use the one used by JSON Server
 export const authMiddleware = (
   req: Request,
   res: Response,
