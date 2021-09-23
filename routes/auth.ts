@@ -16,7 +16,7 @@ routes.post("/token", (req: Request, res: Response) => {
   if (user) {
     const token = jwt.encode(
       (({ password, ...rest }) => rest)(user),
-      process.env.SECRET_KEY || ""
+      String(process.env.SECRET_KEY)
     );
 
     res.jsonp({ token });
