@@ -1,24 +1,53 @@
 # API Test to trainee
 
-## Features
-* [Json Server](https://github.com/typicode/json-server)
-
 ## Routes
 
-**Authentication**: 
-* [POST] /auth/token
+- [Authentication](#authentication)
+- [Posts](#posts)
 
-**Posts**:
-* [GET] /posts (list posts)
-* [GET] /posts?_page=7&_limit=20 (paginate)
-* [GET] /posts/:id (get by id)
-* [POST] /posts
-* [DELETE] /posts/:id
+### <a name="authentication"></a>Authentication
 
-**Comments**:
-* [GET] /comments
-* [GET] /comments/:id
-* [POST] /comments
-* [DELETE] /comments/:id
+| Method   | Path        | Return |
+| -------- | ----------- | ------ |
+| **POST** | /auth/token | Object |
 
+```json
+# --- Body Request ---
+{
+  "username" : "string",
+  "password" : "string"
+}
 
+# --- Response ---
+{
+  "token" : "string"
+}
+```
+
+### <a name="posts"></a>Posts
+
+**Header:** Authorization: Bearer {token}
+
+| Method     | Path       | Return        | Description            |
+| ---------- | ---------- | ------------- | ---------------------- |
+| **GET**    | /posts     | Array\<Post>  | list posts             |
+| **GET**    | /posts/:id | Object\<Post> | get by id              |
+| **POST**   | /posts     | Object\<Post> | Insert or Update posts |
+| **DELETE** | /posts/:id | Object\<Post> | Delete posts           |
+
+```json
+# --- Response <Post> ---
+{
+  "id": "number",
+  "title": "string",
+  "author": "string",
+  "createdAt": "string",
+  "comments": [
+    {
+      "id": "number",
+      "body": "string",
+      "createdAt": "string"
+    }
+  ]
+}
+```
