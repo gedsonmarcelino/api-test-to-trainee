@@ -1,4 +1,4 @@
-# API Test to trainee
+# API Rest to trainee
 
 ## Requiriments
 
@@ -13,7 +13,7 @@
 $ yarn # or npm install
 
 # Running appication
-$ yarn start
+$ yarn start # or npm run start
 ```
 
 ## Routes
